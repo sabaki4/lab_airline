@@ -14,7 +14,7 @@ public class Passenger {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column
-    private Long id;
+    private long id;
 
     @Column
     private String name;

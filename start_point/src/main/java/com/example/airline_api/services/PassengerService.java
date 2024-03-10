@@ -70,4 +70,9 @@ public class PassengerService {
     public Passenger addPassenger(Passenger passenger) {
         return passenger;
     }
+
+    @Transactional
+    public Passenger savePassenger(Passenger passenger) {
+        return passengerRepository.save(passenger);
+    }
 }
